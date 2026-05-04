@@ -262,6 +262,11 @@ footer{
     border-top: #fd336d solid 0.2rem;
 }
 
+footer a img{
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem 1rem;
+}
 .contact img{
     width: 2rem;
     height: 2rem;
