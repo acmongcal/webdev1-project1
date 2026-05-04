@@ -1,26 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Kuuhaku Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&family=Press+Start+2P&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Story+Script&family=Tilt+Neon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/scripts.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/ico">
 </head>
-<body>
-    <header>
-        <p> About me</p>
 
+<body>
+
+    <header  id="header">
+        <nav class="site-navigation">
+            <ul>
+                <li class="logo">
+                    <a href="#header">
+                        Kuuhaku Dev
+                        <img src="images/icon.png" alt="fox-mask">
+                    </a>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
+        <div class="banner">
+            <h1>Hi! I'm Alan, Front-End Web Developer</h1>
+            <div class="skills">
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Illustrator</p>
+                <p>Photoshop</p>
+            </div>    
+        </div>
+        
+
+        <h2 id="project">Projects</h2>  
+        <nav class="project-nav">
+            <ul>
+                <li><a href="#html-css">All</a></li>
+                <li><a href="#html-css">HTML/CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#wordpress">WordPress</a></li>
+                <li><a href="#online-stores">Online Stores</a></li>
+            </ul>
+        </nav>
+
+        <h3 id="html-css">HTML/CSS</h3>
+        <div class="projects">
+            <article>
+                <img src="images/keyboard.jpg" alt="picture-of-keyboard">
+                <p>Country Website</p>
+            </article>
+        
+            <article>
+                <img src="images/keyboard.jpg" alt="picture-of-keyboard">
+                <p>Business Website</p>
+            </article>
+        </div>
+        
+        <h3 id="javascript">JavaScript</h3>
+        <div class="projects">
+            <article>
+                <img src="images/keyboard.jpg" alt="picture-of-keyboard">
+                <p>JavaScript Game</p>
+            </article>
+            
+            <article>
+                <img src="images/keyboard.jpg" alt="picture-of-keyboard">
+                <p>Movie Database</p>
+            </article>
+        </div>
+        
+        <h3 id="wordpress">WordPress</h3>
+        <div class="projects">
+            <article>
+                <img src="images/keyboard.jpg" alt="picture-of-keyboard">
+                <p>Vancouver</p>
+            </article>
+            
+            <article>
+                <img src="images/keyboard.jpg" alt="picture-of-keyboard">
+                <p>Mindset</p>
+            </article>
+            
+            <article>
+                <img src="images/keyboard.jpg" alt="picture-of-keyboard">
+                <p>School</p>
+            </article>
+        </div>
+        
+        <h3 id="online-stores">Online Stores</h3>
+        <div class="projects">
+             <article>
+                <img src="images/keyboard.jpg" alt="picture-of-keyboard">
+                <p>Shopify Store</p>
+            </article>
+
+            <article>
+                <img src="images/keyboard.jpg" alt="picture-of-keyboard">
+                <p>WooCommerce Store</p>
+            </article>
+        </div>
+       
+        <h2  id="about">About Me</h2>
+        <div class = "about">
+            <img src="images/kuuhaku.jpg" alt="man-wearing-fox-mask">
+            <p>
+            I am currently studying front-end web development at <abbr title="British Columbia Institute of Technology">BCIT</abbr> who strives to create user friendly and accessible sites. I graduated in Bachelor of Science in Computer Science at <abbr title="University of the Philippines Visayas">UPV</abbr> back in the Philippines. Right after graduating I worked for 5 years in a japanese IT company which is based in the Philippines as a quality assurance for both hardware and software. Fast forward, I migrated to Canada then alongside studying, I am also currently working part-time at walmart in the meat department to fund my daily expenses.  
+            </p>
+            <p>
+            More things about me, I have a lot of hobbies like drawing(but not that good), playing guitar, watching anime, watching kdrama, playing computer games and watching vtubers. I also listen to a lot of songs from vtubers, kpop, jpop and jrock.
+            </p>
+        </div>
     </main>
 
     <footer>
         <p>&copy; Kuuhaku Dev 2026.</p>
+        <div class="contact" id="contact">
+            <a href="mailto:kuuuhakudev@gmail.com">
+                <img src="images/mail-icon.png" alt="mail-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/acmongcal">
+                <img src="images/linkedin-icon.png" alt="linkedin-icon">
+            </a>
+            <a href="https://github.com/acmongcal">
+                <img src="images/github-icon.png" alt="github-icon">
+            </a>
+        </div>
+        <p>For Educational Purposes</p>
     </footer>
-    
+
 </body>
 </html>
+

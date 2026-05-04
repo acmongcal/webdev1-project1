@@ -1,6 +1,305 @@
-header{
-    width: 125rem;
-    height: 100rem;
-    background-image: url('../images/bg.jpg');
-    color: white;
+/* 320px wide to at least 1920px wide. */
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+# Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography   
+
+Press Start 2P
+Tilt Neon
+Nova Round
+Sansation
+Story Script
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Sansation", Arial, Helvetica, sans-serif ;
+    color: #94C5CC;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p {
+	font-family:"Tilt Neon", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #94C5CC;
+    line-height: 1.5;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 0 3rem;
+	font-size:1rem;
+    list-style: none;
+    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+}
+
+.project-nav ul li a{
+    font-size: 0.75rem;
+}
+
+.logo{
+    display: inline-block;
+	padding: 1rem;
+	font-size:1.5rem;
+    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+}
+
+
+/* Elements
+--------------------------------------------- */
+
+
+h1{
+    background: rgba(0, 1, 0, 0.7);
+    border-radius: 1rem;
+    padding:1%;
+}
+
+h2{
+    display: inline-block;
+    margin: 5% 0 4% 5%;
+    border: outset #fd336d 0.4rem;
+    background-color: #000100;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    box-shadow: -10px 8px #94C5CC;
+}
+
+h3{
+    text-align: center;
+    margin: 5rem auto;
+    border-top: #fd336d solid 0.2rem;
+    border-bottom: #fd336d solid 0.2rem;
+    background-color: #000100;
+}
+
+article img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    border: outset #fd336d 0.1rem;
+    box-shadow: -10px -25px  #94C5CC;
+}
+
+
+article img:hover,
+article img:focus,
+article img:active{
+    content: url("../images/keyboard-wip.jpg");
+}
+/* Links
+--------------------------------------------- */
+a,
+a:visited { 
+	color: #94C5CC;
+	text-decoration: none;
+}
+
+
+ul li a,
+ul li a:visited { 
+	color: #94C5CC;
+	text-decoration: none;
+}
+
+ul li a:hover,
+ul li a:focus,
+ul li a:active {
+	border: outset #fd336d 0.4rem;
+    background-color: #000100;
+    padding: 0.4rem;
+    border-radius: 1rem;
+}
+
+ul li a:focus {
+	outline: 1px dotted;
+}
+
+.logo a:hover,
+.logo a:focus,
+.logo a:active{
+    border: outset #fd336d 0;
+    background-color: #000100;
+    padding: 0;
+    border-radius: 0;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+
+.site-navigation{
+    display: flex;
+    width: 100%;
+    background-color: #000100;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.logo a img{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-left: -1.5rem;
+}
+
+/* Main
+--------------------------------------------- */
+body{
+    background-color: #240115;
+}
+
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 10%;
+    border-top: #fd336d solid 0.2rem;
+    border-bottom: #fd336d solid 0.2rem;
+}
+
+.skills{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.skills p{
+    text-align: center;
+    color: #A1A6B4;
+    background-color: #000100;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: #94C5CC solid;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    width: 100%;
+    justify-content: center;
+    padding: 0 10%;
+    margin-bottom: 5rem;
+}
+
+.project-nav{
+    background-color: #000100;
+    border-top: #fd336d solid 0.2rem;
+    border-bottom: #fd336d solid 0.2rem;
+}
+
+.projects article p{
+    background-color: #000100;
+    padding: 1rem;
+    border: outset #fd336d 0.1rem;
+    border-radius: 0.5rem;
+}
+
+.about{
+    margin: 0 auto;
+    padding:0 10% 5% 10%;
+}
+
+.about img{
+    display: block;
+    width: 40%;
+    height: 40%;
+    margin: 2rem auto;
+    box-shadow: 60px -16px #94C5CC;
+}
+
+
+/* Footer
+--------------------------------------------- */
+footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #000100;
+    align-items: center;
+    border-top: #fd336d solid 0.2rem;
+}
+
+.contact img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+}
+
+
+/* Media Queries */
+@media (min-width: 43.75em) {
+
+/* Typography
+--------------------------------------------- */
+    .logo{
+        display: inline-block;
+        padding: 1rem;
+        padding-right: 10%%;
+        font-size:1.5rem;
+        font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+    .banner{
+        height: 50rem;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+
+    .project-nav ul li a{
+        font-size: 1.10rem;
+    }
+
 }
