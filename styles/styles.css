@@ -116,6 +116,12 @@ article img:focus,
 article img:active{
     content: url("../images/keyboard-wip.jpg");
 }
+
+.country-website img:hover,
+.country-websitee img:focus,
+.country-website img:active{
+    content: url("../images/country-website.png");
+}
 /* Links
 --------------------------------------------- */
 a,
