@@ -122,6 +122,13 @@ article img:active{
 .country-website img:active{
     content: url("../images/country-website.png");
 }
+
+
+.javascript-game img:hover,
+.javascript-game img:focus,
+.javascript-gameimg:active{
+    content: url("../images/javascript-game.png");
+}
 /* Links
 --------------------------------------------- */
 a,
