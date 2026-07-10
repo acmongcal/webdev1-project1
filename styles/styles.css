@@ -115,20 +115,20 @@ article img{
 article img:hover,
 article img:focus,
 article img:active{
-    content: url("../images/keyboard-wip.jpg");
+    content: url("../images/keyboard-wip.png");
 }
 
 .country-website img:hover,
 .country-websitee img:focus,
 .country-website img:active{
-    content: url("../images/country-website.png");
+    content: url("../images/country-website-hover.png");
 }
 
 
 .javascript-game img:hover,
 .javascript-game img:focus,
 .javascript-gameimg:active{
-    content: url("../images/javascript-game.png");
+    content: url("../images/javascript-game-hover.png");
 }
 /* Links
 --------------------------------------------- */
